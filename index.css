@@ -1,22 +1,344 @@
-#board {
-  height: 100vh;
-  width: 100vh;
+body {
+  margin: auto;
+  overflow-x: hidden;
 }
 
-.cell {
-  height: 30vh;
-  width: 30vh;
-  display: inline-block;
-  border: 1px solid black;
-  position: relative;
+p {
+  display: contents;
+  vertical-align: middle;
 }
 
+.menu-hyperlink {
+  color:inherit;
+  font-weight: inherit;
+  text-decoration: initial;
+}
 
-.cell span {
+button {
+  cursor: pointer;
+}
+
+.header-nav-bar {
+  background-color: #0085c3;
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.footer-nav-bar {
+  background-color:black;
+  position: fixed;
+  height: 45px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.header-menu-box {
+  height: 120px;
+  width: 60%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  font-size: 10vh;
-  font-family: 'Consolas';
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.footer-menu-box {
+  height: 55px;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-menu {
+  padding: 0px 10px;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;    
+  font-family: 'Abel';
+  font-size: 20;
+  font-weight: normal;
+  white-space: nowrap;
+  color:white;
+}
+
+.footer-menu {
+  padding: 0px 10px;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;    
+  font-family: 'Abel';
+  font-size: 16;
+  font-weight: normal;
+  white-space: nowrap;
+  color:white;
+}
+
+.dell-logo {
+  position: absolute;
+  width: 200px;
+  top: 10px;
+  left: 0px;
+}
+
+.footer-specs-bar {
+  background-color:lightgrey;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  bottom: 45px;
+  left: 0px;
+  z-index: 2;
+}
+
+.footer-specs-menu-box {
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-specs-menu {
+  padding: 0px 10px;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;    
+  font-family: 'Abel';
+  font-size: 24;
+  font-weight: bolder;
+  white-space: nowrap;
+  color:#0085c3;
+}
+
+.footer-specs-price_customize {
+  padding: 0px 20px;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;    
+  font-family: 'Abel';
+  font-size: 23;
+  font-weight: normal;
+  white-space: nowrap;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#button-customize {
+  background-color: #8AA10D;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;    
+  font-family: 'Abel';
+  font-size: 20;
+  font-weight: bolder;
+  white-space: nowrap;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  outline: none;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.container-box {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.main-section {
+  height: 100%;
+  width: 1330px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.top-section {
+  display: inline-block;
+  width: 100%;
+  flex-shrink: 0;
+  flex-basis: 80px;
+  position: relative;
+}
+
+.bottom-section {
+  display: inline-block;
+  width: 100%;
+  flex-shrink: 0;
+  flex-basis: 450px;
+  position: relative;
+}
+
+.left-content {
+  flex-shrink: 0;
+  flex-basis: 650px;
+  position: relative;
+}
+
+.right-content {
+  flex-shrink: 0;
+  flex-basis: 660px;
+  position: relative;
+}
+
+.top-label {
+  width: 1320px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  margin-right: 0px 10px;
+  vertical-align: middle;
+  text-align: left;    
+  font-family: 'Abel';
+  font-size: 30;
+  font-weight: bold;
+  color:black;
+  z-index: 1;
+}
+
+.content-box {
+  height: 450px;
+  width: 650px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.display-box {
+  height: 100%;
+  width: 100%;
+  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/display.png');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 150px;
+}
+
+.processor-box {
+  height: 100%;
+  width: 100%;
+  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/processor.jpg');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 150px;
+}
+
+.graphic-card-box {
+  height: 100%;
+  width: 100%;
+  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/nvidia.png');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 150px;
+}
+
+.ram-box {
+  height: 100%;
+  width: 100%;
+  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/ram.png');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 150px;
+}
+
+.storage-box {
+  height: 100%;
+  width: 100%;
+  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/storage.png');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 150px;
+}
+
+.content-list {
+  height: 200px;
+  width: 150px;
+  border-style: outset;
+  border-color: whitesmoke;
+  box-shadow: 6px 9px 10px lightslategray;
+  margin: 5px;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.content-text {
+  padding-bottom: 5px;
+  height: 60px;
+  width: 145px;
+  vertical-align: middle;
+  text-align: center;    
+  font-family: 'Abel';
+  font-size: 20;
+  font-weight: normal;
+  color:black;
+}
+
+.right-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/dell_7390-01.JPG');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 650px;
+  z-index: 1;
 }

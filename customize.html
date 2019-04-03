@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./customize.css" />
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <title>Build My Dell</title>   
+  </head>
+  <body>
+    <header>
+      <div class="header-nav-bar">
+        <div class="header-menu-box">
+          <div class="header-menu">
+            <img class="dell-logo" src = "https://www.mysmartgroup.co.uk/wp-content/uploads/2017/12/1-2-dell-logo-3d-white-png.png"/>
+          </div>   
+          <div class="header-menu-space"></div>                          
+          <div class="header-menu">
+            <a class="menu-hyperlink" href='./Webpages/homepage.html'><p>Homepage</p></a>
+          </div>
+          <div class="header-menu">
+            <a class="menu-hyperlink" href='./Webpages/my-profile.html'><p>My Profile</p></a>
+          </div>
+          <div class="header-menu">
+            <a class="menu-hyperlink" href='./Webpages/my-cart.html'><p>My Cart</p></a>
+          </div>
+        </div> 
+      </div>
+    </header>
+    <section>
+      <div class="middle-image"></div>
+      <div class="container">
+        <div class="container-box left-content">
+          <div id="display-view" class="content-box display-box">
+            <div class="content-specs-arrow"><p>Display</p></div>
+            <div class="content-specs-arrow arrow-left"></div>
+            <div class="content-list">
+              <label class="content-text">
+                13.3" FHD (1920 x 1080) Touch with Corning Gorilla Glass 4
+                <input type="radio" onclick="getDisplayFunction()" name="display-options" value="13.3&quot; FHD (1920 x 1080) Touch with Corning Gorilla Glass 4">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                13.3" QHD (2560 x 1440) Touch with Corning Gorilla Glass 4
+                <input type="radio" onclick="getDisplayFunction()" name="display-options" value="13.3&quot; QHD (2560 x 1440) Touch with Corning Gorilla Glass 4">
+                <span class="button-specs"></span>
+              </label>
+            </div>
+          </div>
+          <div id="graphic-card-view" class="content-box graphic-card-box">
+            <div class="content-specs-arrow"><p>Graphic Card</p></div>
+            <div class="content-specs-arrow arrow-left"></div>
+            <div class="content-list">
+              <label class="content-text">
+                Intel UHD Graphics 620
+                <input type="radio" onclick="getGraphicCardFunction()" name="graphic-card-options" value="Intel UHD Graphics 620">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                AMD Radeon 530
+                <input type="radio" onclick="getGraphicCardFunction()" name="graphic-card-options" value="AMD Radeon 530">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                NVIDIA GeForce MX130
+                <input type="radio" onclick="getGraphicCardFunction()" name="graphic-card-options" value="NVIDIA GeForce MX130">
+                <span class="button-specs"></span>
+              </label>
+            </div>
+          </div>
+          <div id="storage-view" class="content-box storage-box">
+            <div class="content-specs-arrow"><p>Storage</p></div>
+            <div class="content-specs-arrow arrow-left"></div>
+            <div class="content-list">
+              <label class="content-text">
+                128GB SSD
+                <input type="radio" onclick="getStorageFunction()" name="storage-options" value="128GB SSD">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                256GB SSD
+                <input type="radio" onclick="getStorageFunction()" name="storage-options" value="256GB SSD">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                512GB SSD
+                <input type="radio" onclick="getStorageFunction()" name="storage-options" value="512GB SSD">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                1TB SSD
+                <input type="radio" onclick="getStorageFunction()" name="storage-options" value="1TB SSD">
+                <span class="button-specs"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="container-box middle-content"></div>
+        <div class="container-box right-content">
+          <div id="processor-view" class="content-box processor-box">
+            <div class="content-specs-arrow"><p>Processor</p></div>
+            <div class="content-specs-arrow arrow-right"></div>
+            <div class="content-list">
+              <label class="content-text">
+                Intel Core i5-8250U Processor
+                <input type="radio" onclick="getProcessorFunction()" name="processor-options" value="Intel Core i5-8250U Processor">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                Intel Core i5-8350U Processor
+                <input type="radio" onclick="getProcessorFunction()" name="processor-options" value="Intel Core i5-8350U Processor">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                Intel Core i7-8650U Processor
+                <input type="radio" onclick="getProcessorFunction()" name="processor-options" value="Intel Core i7-8650U Processor">
+                <span class="button-specs"></span>
+              </label>
+            </div>
+          </div>
+          <div id="ram-view" class="content-box ram-box">
+            <div class="content-specs-arrow"><p>RAM</p></div>
+            <div class="content-specs-arrow arrow-right"></div>
+            <div class="content-list">
+              <label class="content-text">
+                8GB LPDDR3 1866MHz
+                <input type="radio" onclick="getRamFunction()" name="ram-options" value="8GB LPDDR3 1866MHz">
+                <span class="button-specs"></span>
+              </label>
+              <label class="content-text">
+                16GB LPDDR3 2133MHz
+                <input type="radio" onclick="getRamFunction()" name="ram-options" value="16GB LPDDR3 2133MHz">
+                <span class="button-specs"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav>
+      <div class="footer-specs-bar">
+        <div class="footer-specs-menu-box">
+          <div class="footer-specs-menu">
+            <button id="button-display">Select a Display</button>
+          </div>
+          <div class="footer-specs-menu">
+            <button id="button-processor">Select a Processor</button>
+          </div>
+          <div class="footer-specs-menu">
+            <button id="button-graphic-card">Select a Graphic Card</button>
+          </div>
+          <div class="footer-specs-menu">
+            <button id="button-ram">Select a RAM</button>
+          </div>
+          <div class="footer-specs-menu">
+            <button id="button-storage">Select a Storage</button>
+          </div>
+          <div class="footer-specs-price_customize">
+            <p>RM 1234.56</p>
+            <button id="button-checkout">Check Out</button>
+          </div>
+        </div>     
+      </div>
+    </nav>
+    <footer>
+      <div class="footer-nav-bar">  
+          <div class="footer-menu-box">
+            <div class="footer-menu">
+              <a class="menu-hyperlink" href='./Webpages/tnc.html'><p>Terms and Conditions</p></a>
+            </div>
+            <div class="footer-menu">
+              <a class="menu-hyperlink" href='./Webpages/privacy-statement.html'><p>Privacy Statement</p></a>
+            </div>
+            <div class="footer-menu">
+              <a class="menu-hyperlink" href='./Webpages/about-dell.html'><p>About Dell</p></a>
+            </div>   
+            <div class="footer-menu">
+              <a class="menu-hyperlink" href='./Webpages/contact-us.html'><p>Contact Us</p></a>
+            </div>  
+          </div>   
+      </div> 
+    </footer>
+    <script src="./customize.js"></script>
+  </body>
+</html>

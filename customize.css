@@ -1,0 +1,444 @@
+body {
+    margin: auto;
+    overflow-x: hidden;
+}
+
+p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-hyperlink {
+    color:inherit;
+    font-weight: inherit;
+    text-decoration: initial;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.content-text input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* On mouse-over, add a whitesmoke background color */
+.content-text input:hover  ~ .button-specs {
+    background-color: whitesmoke;
+}
+
+/* When the radio button is checked, add a checkmark background */
+.container input:checked ~ .button-specs {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: grey;
+    color: white;
+    margin: auto;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/checkmark.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.header-nav-bar {
+    background-color: #0085c3;
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.footer-nav-bar {
+    background-color:black;
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.header-menu-box {
+    height: 120px;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.footer-menu-box {
+    height: 55px;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-menu {
+    padding: 0px 10px;
+    width: auto;
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 20;
+    font-weight: normal;
+    white-space: nowrap;
+    color:white;
+}
+
+.footer-menu {
+    padding: 0px 10px;
+    width: auto;
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 16;
+    font-weight: normal;
+    white-space: nowrap;
+    color:white;
+}
+
+.dell-logo {
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    left: 0px;
+  }
+
+.footer-specs-bar {
+    background-color:lightgrey;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    bottom: 45px;
+    left: 0px;
+    z-index: 2;
+}
+
+.footer-specs-menu-box {
+    height: 60px;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.footer-specs-menu {
+    padding: 0px 10px;
+    height: auto;
+    width: auto;
+    
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 24;
+    font-weight: bolder;
+    white-space: nowrap;
+    color:#0085c3;
+}
+
+.footer-specs-price_customize {
+    padding: 0px 20px;
+    width: auto;
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 23;
+    font-weight: normal;
+    white-space: nowrap;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-checkout {
+    background-color: #8AA10D;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 20;
+    font-weight: bolder;
+    white-space: nowrap;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    outline: none;
+}
+
+#button-display {
+    border-style: none;
+    background-color: inherit;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 24;
+    font-weight: bolder;
+    white-space: nowrap;
+    color:#0085c3;
+}
+
+#button-processor {
+    border-style: none;
+    background-color: inherit;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 24;
+    font-weight: bolder;
+    white-space: nowrap;
+    color:#0085c3;
+}
+
+#button-graphic-card {
+    border-style: none;
+    background-color: inherit;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 24;
+    font-weight: bolder;
+    white-space: nowrap;
+    color:#0085c3;
+}
+
+#button-ram {
+    border-style: none;
+    background-color: inherit;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 24;
+    font-weight: bolder;
+    white-space: nowrap;
+    color:#0085c3;
+}
+
+#button-storage {
+    border-style: none;
+    background-color: inherit;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;    
+    font-family: 'Abel';
+    font-size: 24;
+    font-weight: bolder;
+    white-space: nowrap;
+    color:#0085c3;
+}
+
+.container {
+    height: 5800px;
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.container-box {
+    display: inline-block;
+    height: 5800px;
+    width: 100%;
+}
+
+.left-content {
+    flex-shrink: 0;
+    flex-basis: 500px;
+    position: relative;
+}
+
+.middle-content {
+    flex-shrink: 0;
+    width: 758px;
+}
+
+.right-content {
+    flex-shrink: 0;
+    flex-basis: 500px;
+    position: relative;
+}
+
+.content-box {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-box {
+    left: 0px;
+    top: 100px;
+}
+
+.processor-box {
+    right: 0px;
+    top: 1350px;
+}
+
+.graphic-card-box {
+    left: 0px;
+    top: 2600px;
+}
+
+.ram-box {
+    right: 0px;
+    top: 3850px;
+}
+
+.storage-box {
+    left: 0px;
+    top: 5100px;
+}
+
+.content-list {
+    height: 350px;
+    width: 475px;
+    margin: 30px;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: top;
+    vertical-align: middle;
+    text-align: left;    
+    font-family: 'Abel';
+    font-size: 17;
+    font-weight: normal;
+    color:black;
+}
+
+label {
+    height: 60px;
+    width: 475px;
+    border-color: grey;
+    border-radius: 12px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.content-list-box {
+    height: 60px;
+    width: 475px;
+    display: inline-block;
+
+}
+
+.content-text {
+    height: 60px;
+    width: 465px;
+    vertical-align: middle;
+    text-align: left;    
+    font-family: 'Abel';
+    font-size: 18;
+    font-weight: normal;
+    color:black;
+    cursor: pointer;
+    margin: 2px 0px;
+    padding: 0px 8px;
+    align-items: center;
+}
+
+.middle-image {
+    background-color: aqua;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 120px;
+    bottom: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/dell_7390-02.JPG');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.button-specs {
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: grey;
+    margin: auto;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    position: absolute;
+}
+
+.content-specs-arrow {
+    height: 56px;
+    width: 475px;
+    padding: 0px 10px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Abel';
+    font-size: 30;
+    font-weight: normal;
+    white-space: nowrap;
+    color: black;
+}
+
+.arrow-left {
+    background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 475px;
+    transform: rotate(180deg);
+}
+
+.arrow-right {
+    background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 475px;
+}

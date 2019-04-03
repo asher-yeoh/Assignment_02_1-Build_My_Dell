@@ -258,7 +258,7 @@ button {
 .display-box {
   height: 100%;
   width: 100%;
-  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/display.png');
+  background: url('./Images/display.png');
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -268,7 +268,7 @@ button {
 .processor-box {
   height: 100%;
   width: 100%;
-  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/processor.jpg');
+  background: url('./Images/processor.jpg');
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -278,7 +278,7 @@ button {
 .graphic-card-box {
   height: 100%;
   width: 100%;
-  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/nvidia.png');
+  background: url('./Images/nvidia.png');
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -288,7 +288,7 @@ button {
 .ram-box {
   height: 100%;
   width: 100%;
-  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/ram.png');
+  background: url('./Images/ram.png');
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -298,7 +298,7 @@ button {
 .storage-box {
   height: 100%;
   width: 100%;
-  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/storage.png');
+  background: url('./Images/storage.png');
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -335,7 +335,7 @@ button {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/dell_7390-01.JPG');
+  background: url('./Images/dell_7390-01.JPG');
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;

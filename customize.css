@@ -41,7 +41,7 @@ button {
     height: 40px;
     width: 40px;
     outline: none;
-    background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/checkmark.jpg');
+    background: url('./Images/checkmark.jpg');
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -394,7 +394,7 @@ label {
     bottom: 135px;
     left: 50%;
     transform: translateX(-50%);
-    background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/dell_7390-02.JPG');
+    background: url('./Images/dell_7390-02.JPG');
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -427,7 +427,7 @@ label {
 }
 
 .arrow-left {
-    background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/arrow.jpg');
+    background: url('./Images/arrow.jpg');
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -436,7 +436,7 @@ label {
 }
 
 .arrow-right {
-    background: url('C:/Users/asher_yeoh/Documents/JS Tutorial/Assignments/Assignment_02_1-Build_My_Dell/Images/arrow.jpg');
+    background: url('./Images/arrow.jpg');
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
